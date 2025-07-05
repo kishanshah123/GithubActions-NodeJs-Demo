@@ -15,6 +15,7 @@ jobs:
           node-version: 18
           cache: 'npm'
   job2:
+   needs: job1
    continue-on-error: true
    runs-on: ubuntu-latest
    steps: 
